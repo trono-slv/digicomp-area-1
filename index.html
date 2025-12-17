@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulazione Quiz DigComp 2.2 / ECDL</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Simulazione Quiz DigComp 2.2 / ECDL</h1>
+
+        <div class="timer-container">
+            <span id="timer">Tempo rimanente: 30:00</span>
+        </div>
+        
+        <div id="navigation-info" class="hidden">
+            </div>
+
+        <form id="quiz-form">
+            <div id="loading-message">Caricamento quiz in corso...</div>
+        </form>
+
+        <button id="submit-quiz" class="hidden">Termina e Correggi</button>
+
+        <div id="result-area" class="hidden">
+            <h2>Risultato Finale</h2>
+            <p id="score-text"></p>
+            <div id="outcome-text"></div>
+            
+            <h3>Riepilogo delle Risposte</h3>
+            <div id="summary-area"></div>
+
+            <div class="button-group">
+                <button id="restart-new-quiz">Genera Nuovo Test (30 Domande Casuali)</button>
+                <button id="repeat-same-quiz">Ripeti Stesso Test (Stesse 30 Domande)</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
